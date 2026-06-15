@@ -173,7 +173,7 @@
     }
     .hero-overlay {
       position: absolute; inset: 0;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0.52) 100%);
+      background: linear-gradient(to bottom, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.68) 100%);
     }
     .hero-content {
       position: absolute; bottom: 0; left: 0; right: 0;
@@ -326,7 +326,22 @@
     .ig-cell img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s; }
     .ig-cell:hover img { transform: scale(1.06); }
 
-    .ig-cta {
+    .ig-splash {
+      display: block; position: relative;
+      border-radius: 12px; overflow: hidden;
+      aspect-ratio: 4/3;
+    }
+    .ig-splash img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+    .ig-splash:hover img { transform: scale(1.03); }
+    .ig-splash-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 50%);
+      display: flex; align-items: flex-end; padding: 16px 18px;
+    }
+    .ig-splash-label {
+      font-size: 0.82rem; font-weight: 500; color: rgba(255,255,255,0.9);
+      letter-spacing: 0.04em;
+    }
       display: block; text-align: center;
       margin-top: 12px;
       font-size: 0.82rem; font-weight: 500; color: var(--mid);
@@ -606,7 +621,7 @@
 
 <!-- HERO -->
 <section class="hero">
-  <img src="playing1.jpg" alt="Beachvolleyboll på Ladugårdsgärdet, Stockholm" />
+  <img src="PHOTO-2026-05-27-20-55-35.jpg" alt="Beachvolleyboll på Ladugårdsgärdet, Stockholm" />
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-text">
@@ -633,11 +648,11 @@
 
 <!-- PHOTO MOSAIC -->
 <div class="mosaic reveal">
-  <div class="mosaic-cell tall"><img src="playing1.jpg" alt="Spel på Gärdet" /></div>
-  <div class="mosaic-cell"><img src="playing2.png" alt="Match på sandplanen" /></div>
-  <div class="mosaic-cell"><img src="beach.png" alt="Gärdet Beach Volley" /></div>
-  <div class="mosaic-cell"><img src="playing2.png" alt="Lag på Ladugårdsgärdet" /></div>
-  <div class="mosaic-cell"><img src="playing1.jpg" alt="Beachvolley Stockholm" /></div>
+  <div class="mosaic-cell tall"><img src="PHOTO-2026-05-27-20-55-35.jpg" alt="Regnbåge över sandplanerna på Gärdet" /></div>
+  <div class="mosaic-cell"><img src="PHOTO-2026-05-29-19-28-20.jpg" alt="Spel på Gärdet" /></div>
+  <div class="mosaic-cell"><img src="pexels-helder-pereira-326724210-33490287.jpg" alt="Mikasa boll i sanden" /></div>
+  <div class="mosaic-cell"><img src="PHOTO-2026-06-03-19-28-06.jpg" alt="Serve på Ladugårdsgärdet" /></div>
+  <div class="mosaic-cell"><img src="PHOTO-2026-05-24-09-46-13.jpg" alt="Bollar inför säsongen" /></div>
 </div>
 
 <hr />
@@ -692,14 +707,12 @@
           </a>
         </div>
         <div class="social-block-body">
-          <div class="ig-grid">
-            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-cell"><img src="playing1.jpg" alt="Bild 1" /></a>
-            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-cell"><img src="playing2.png" alt="Bild 2" /></a>
-            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-cell"><img src="beach.png" alt="Bild 3" /></a>
-            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-cell"><img src="playing2.png" alt="Bild 4" /></a>
-            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-cell"><img src="playing1.jpg" alt="Bild 5" /></a>
-            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-cell"><img src="beach.png" alt="Bild 6" /></a>
-          </div>
+          <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-splash">
+            <img src="PHOTO-2026-06-03-19-28-06.jpg" alt="Serve på Ladugårdsgärdet — följ oss på Instagram" />
+            <div class="ig-splash-overlay">
+              <div class="ig-splash-label">@gardet.beachvolley</div>
+            </div>
+          </a>
           <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-cta">
             Se alla bilder på Instagram ↗
           </a>
