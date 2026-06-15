@@ -3,1382 +3,963 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Gärdet Beach Volley – Beachvolleyboll på Ladugårdsgärdet, Stockholm</title>
   <meta name="description" content="Gärdet Beach Volley är ett blandat dam- och herrlag i beachvolleyboll på Ladugårdsgärdet i Stockholm. Säsongsstart 25 maj 2026. Medlemsavgift 150 kr. Anmäl dig idag!" />
-  <meta name="keywords" content="Gärdet beachvolley, Gärdet volleyball, beachvolleyboll Stockholm, Ladugårdsgärdet beachvolley, volleyball Stockholm, beachvolley lag Stockholm, utomhus volleyball Östermalm, sandvolleyboll Stockholm" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Alexandra Grisanti" />
   <link rel="canonical" href="https://gardetbeachvolley.se/" />
-
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://gardetbeachvolley.se/" />
   <meta property="og:title" content="Gärdet Beach Volley – Beachvolleyboll i Stockholm" />
-  <meta property="og:description" content="Blandat lag för beachvolleyboll på Ladugårdsgärdet, Stockholm. Säsong 2026 börjar 25 maj. Gå med nu!" />
+  <meta property="og:description" content="Blandat lag för beachvolleyboll på Ladugårdsgärdet, Stockholm. Säsong 2026 börjar 25 maj." />
   <meta property="og:image" content="https://gardetbeachvolley.se/playing1.jpg" />
-  <meta property="og:locale" content="sv_SE" />
-  <meta property="og:site_name" content="Gärdet Beach Volley" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Gärdet Beach Volley – Beachvolleyboll i Stockholm" />
-  <meta name="twitter:description" content="Beachvolleyboll på Ladugårdsgärdet, Stockholm. Säsong 2026 – anmäl dig nu!" />
-  <meta name="twitter:image" content="https://gardetbeachvolley.se/playing1.jpg" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SportsOrganization",
-    "name": "Gärdet Beach Volley",
-    "sport": "Beach Volleyball",
-    "url": "https://gardetbeachvolley.se",
-    "logo": "https://gardetbeachvolley.se/beach.png",
-    "description": "Blandat dam- och herrlag för beachvolleyboll på Ladugårdsgärdet i Stockholm.",
-    "location": {
-      "@type": "Place",
-      "name": "Ladugårdsgärdet sandplaner",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Stockholm",
-        "addressRegion": "Stockholms län",
-        "addressCountry": "SE"
-      }
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Lagledare",
-      "email": "alexandrapgrisanti@gmail.com",
-      "telephone": "+46700254213",
-      "name": "Alexandra Grisanti"
-    }
-  }
-  </script>
-
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsOrganization","name":"Gärdet Beach Volley","sport":"Beach Volleyball","url":"https://gardetbeachvolley.se"}</script>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏐</text></svg>" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 
   <style>
     :root {
-      --cream:       #FDFAF5;
-      --orange-pale: #FFF0E6;
-      --orange-soft: #FFDFC4;
-      --orange:      #F07040;
-      --orange-deep: #D95520;
-      --blue-pale:   #EDF4FF;
-      --blue-soft:   #C8DFFF;
-      --blue:        #4A90D9;
-      --blue-deep:   #2B6CB0;
-      --sand:        #F5ECD8;
-      --text:        #1A1A1A;
-      --text-mid:    #4A4A4A;
-      --text-light:  #888;
-      --border:      #E8E0D0;
-      --white:       #FFFFFF;
-      --fb:          #1877F2;
-      --ig-from:     #833ab4;
-      --ig-to:       #fd1d1d;
-      --spotify:     #1DB954;
+      --white:      #FFFFFF;
+      --off:        #F8F6F2;
+      --stone:      #EEEBE4;
+      --accent:     #E05C2A;
+      --accent-dk:  #C44D20;
+      --ink:        #181818;
+      --mid:        #5A5A5A;
+      --muted:      #999;
+      --border:     #E2DDD6;
+      --spotify:    #1DB954;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; font-size: 16px; }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: 'DM Sans', sans-serif;
-      background: var(--cream);
-      color: var(--text);
+      background: var(--white);
+      color: var(--ink);
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
 
-    /* ─── NAV ─── */
+    /* ── NAV ── */
     nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      background: rgba(253,250,245,0.92);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
       border-bottom: 1px solid var(--border);
-      padding: 0 24px;
-      height: 64px;
-      display: flex;
-      align-items: center;
+      height: 62px;
+      display: flex; align-items: center;
+      padding: 0 32px;
       justify-content: space-between;
     }
 
     .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      display: flex; align-items: center; gap: 10px;
       text-decoration: none;
     }
-    .nav-logo img {
-      height: 34px;
-      width: 34px;
-      object-fit: contain;
-      border-radius: 8px;
-    }
-    .nav-logo-text {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.1;
-    }
-    .nav-logo-text strong {
+    .nav-logo img { height: 32px; width: 32px; object-fit: contain; border-radius: 6px; }
+    .nav-logo strong {
       font-family: 'Fraunces', serif;
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--text);
-      letter-spacing: -0.01em;
-    }
-    .nav-logo-text span {
-      font-size: 0.65rem;
-      color: var(--text-light);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      font-size: 0.95rem; font-weight: 700;
+      color: var(--ink); letter-spacing: -0.01em;
     }
 
-    .nav-social {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+    .nav-right { display: flex; align-items: center; gap: 12px; }
 
-    .nav-social-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
+    /* nav social links — minimal, just text */
+    .nav-social-links { display: flex; gap: 20px; }
+    .nav-social-links a {
+      font-size: 0.78rem; font-weight: 500;
+      color: var(--mid); text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: color 0.15s;
+    }
+    .nav-social-links a:hover { color: var(--ink); }
+
+    .nav-divider { width: 1px; height: 20px; background: var(--border); }
+
+    .btn-primary {
       font-family: 'DM Sans', sans-serif;
-      font-size: 0.78rem;
-      font-weight: 600;
-      padding: 7px 14px;
-      border-radius: 100px;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      transition: opacity 0.2s, transform 0.15s;
-      color: var(--white);
-      white-space: nowrap;
-    }
-    .nav-social-btn:hover { opacity: 0.88; transform: translateY(-1px); }
-    .nav-social-btn.fb { background: var(--fb); }
-    .nav-social-btn.ig { background: linear-gradient(135deg, var(--ig-from), var(--ig-to)); }
-
-    .nav-cta {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.82rem;
-      font-weight: 600;
+      font-size: 0.82rem; font-weight: 500;
       padding: 9px 22px;
-      background: var(--orange);
+      background: var(--accent);
       color: var(--white);
-      border: none;
-      border-radius: 100px;
-      cursor: pointer;
-      text-decoration: none;
+      border: none; border-radius: 100px;
+      cursor: pointer; text-decoration: none;
       transition: background 0.2s, transform 0.15s;
-      white-space: nowrap;
+      white-space: nowrap; display: inline-block;
     }
-    .nav-cta:hover { background: var(--orange-deep); transform: translateY(-1px); }
+    .btn-primary:hover { background: var(--accent-dk); transform: translateY(-1px); }
 
-    .nav-right { display: flex; align-items: center; gap: 8px; }
-
-    /* ─── POPUP ─── */
+    /* ── POPUP ── */
     .popup-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(20,20,20,0.45);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.4);
+      backdrop-filter: blur(4px);
       z-index: 999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex; align-items: center; justify-content: center;
       padding: 20px;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.25s ease;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.2s;
     }
     .popup-overlay.open { opacity: 1; pointer-events: all; }
-
     .popup {
       background: var(--white);
-      border-radius: 24px;
-      width: 100%;
-      max-width: 680px;
-      max-height: 92vh;
+      border-radius: 20px;
+      width: 100%; max-width: 640px; max-height: 92vh;
       overflow-y: auto;
-      box-shadow: 0 24px 80px rgba(0,0,0,0.18);
-      transform: translateY(20px) scale(0.98);
-      transition: transform 0.28s ease, opacity 0.28s ease;
-      opacity: 0;
-      position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+      transform: translateY(16px); opacity: 0;
+      transition: transform 0.25s, opacity 0.25s;
     }
-    .popup-overlay.open .popup { transform: translateY(0) scale(1); opacity: 1; }
-
+    .popup-overlay.open .popup { transform: translateY(0); opacity: 1; }
     .popup-header {
-      padding: 32px 32px 0;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 16px;
+      padding: 28px 28px 0;
+      display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
     }
-    .popup-close {
-      background: var(--cream);
-      border: none;
-      border-radius: 50%;
-      width: 36px; height: 36px;
-      cursor: pointer;
-      font-size: 1.1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      color: var(--text-mid);
-      transition: background 0.15s;
-    }
-    .popup-close:hover { background: var(--orange-soft); color: var(--orange-deep); }
     .popup-title {
       font-family: 'Fraunces', serif;
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: var(--text);
-      letter-spacing: -0.02em;
-      line-height: 1.15;
+      font-size: 1.5rem; font-weight: 700;
+      color: var(--ink); letter-spacing: -0.02em;
     }
-    .popup-subtitle { font-size: 0.88rem; color: var(--text-light); margin-top: 4px; line-height: 1.5; }
-
+    .popup-sub { font-size: 0.85rem; color: var(--muted); margin-top: 3px; }
+    .popup-close {
+      background: var(--off); border: none; border-radius: 50%;
+      width: 34px; height: 34px; flex-shrink: 0;
+      cursor: pointer; font-size: 1rem; color: var(--mid);
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.15s;
+    }
+    .popup-close:hover { background: var(--stone); }
     .popup-steps {
-      padding: 24px 32px;
-      display: flex;
-      flex-direction: column;
-      border-top: 1px solid var(--border);
-      margin-top: 24px;
+      padding: 20px 28px;
+      border-top: 1px solid var(--border); margin-top: 20px;
+      display: flex; flex-direction: column;
     }
-    .popup-step { display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .popup-step { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); }
     .popup-step:last-child { border-bottom: none; }
     .step-num {
-      width: 32px; height: 32px;
-      background: var(--orange-pale);
-      border: 1.5px solid var(--orange-soft);
+      width: 28px; height: 28px; flex-shrink: 0; margin-top: 1px;
+      background: var(--off); border: 1px solid var(--border);
       border-radius: 50%;
+      font-size: 0.72rem; font-weight: 600; color: var(--accent);
       display: flex; align-items: center; justify-content: center;
-      font-size: 0.78rem; font-weight: 700;
-      color: var(--orange-deep);
-      flex-shrink: 0; margin-top: 2px;
     }
-    .step-content strong { display: block; font-size: 0.92rem; font-weight: 600; color: var(--text); margin-bottom: 3px; }
-    .step-content p { font-size: 0.85rem; color: var(--text-mid); line-height: 1.6; }
-
-    .popup-form-section { padding: 0 32px 32px; }
+    .step-content strong { display: block; font-size: 0.9rem; font-weight: 500; margin-bottom: 2px; }
+    .step-content p { font-size: 0.82rem; color: var(--mid); line-height: 1.55; }
+    .popup-form { padding: 0 28px 28px; }
     .popup-form-label {
-      font-size: 0.72rem; font-weight: 600;
+      display: block; font-size: 0.68rem; font-weight: 500;
       letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--orange); margin-bottom: 12px; display: block;
+      color: var(--accent); margin-bottom: 10px;
     }
-    .popup-iframe-wrap { border-radius: 16px; overflow: hidden; border: 1px solid var(--border); background: var(--cream); }
-    .popup-iframe-wrap iframe { width: 100%; height: 520px; border: none; display: block; }
+    .popup-form iframe { width: 100%; height: 500px; border: none; border-radius: 12px; display: block; background: var(--off); }
 
-    @media (max-width: 540px) {
-      .popup { border-radius: 18px; }
-      .popup-header { padding: 24px 20px 0; }
-      .popup-steps { padding: 20px; }
-      .popup-form-section { padding: 0 20px 24px; }
-      .popup-title { font-size: 1.3rem; }
-      .popup-iframe-wrap iframe { height: 460px; }
-    }
-
-    /* ─── HERO ─── */
+    /* ── HERO ── */
     .hero {
-      padding: 80px 0 0;
+      padding-top: 62px;
       position: relative;
+      height: 100svh; min-height: 520px; max-height: 900px;
       overflow: hidden;
     }
-
-    .hero-fullbleed {
-      position: relative;
-      width: 100%;
-      height: 92vh;
-      min-height: 560px;
-      max-height: 860px;
-    }
-
-    .hero-fullbleed img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 30%;
+    .hero img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center 35%;
       display: block;
     }
-
     .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.55) 100%);
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0.52) 100%);
     }
-
     .hero-content {
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      padding: 48px 40px;
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 32px;
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 48px 48px 52px;
+      display: flex; align-items: flex-end; justify-content: space-between; gap: 40px;
     }
-
-    .hero-text-block {
-      flex: 1;
-      opacity: 0;
-      animation: fadeUp 0.7s 0.2s ease forwards;
+    .hero-text { flex: 1; opacity: 0; animation: up 0.7s 0.15s ease forwards; }
+    .hero-tag {
+      display: inline-block;
+      font-size: 0.68rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 14px;
     }
-
-    .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.85);
-      border: 1px solid rgba(255,255,255,0.3);
-      padding: 5px 12px;
-      border-radius: 100px;
-      margin-bottom: 16px;
-      backdrop-filter: blur(8px);
-      background: rgba(255,255,255,0.12);
-    }
-
-    h1.hero-title {
+    h1 {
       font-family: 'Fraunces', serif;
-      font-size: clamp(2.8rem, 6vw, 5.5rem);
-      font-weight: 700;
-      line-height: 1.0;
+      font-size: clamp(3rem, 6.5vw, 6rem);
+      font-weight: 700; line-height: 0.96;
       letter-spacing: -0.03em;
       color: var(--white);
-      margin-bottom: 16px;
+      margin-bottom: 20px;
     }
-    h1.hero-title em { font-style: italic; color: #FFD4B8; }
-
-    .hero-desc {
-      font-size: 1.05rem;
-      line-height: 1.65;
-      color: rgba(255,255,255,0.82);
-      max-width: 500px;
-      margin-bottom: 28px;
+    h1 em { font-style: italic; color: rgba(255,220,195,0.92); }
+    .hero-sub {
+      font-size: 1rem; line-height: 1.65;
+      color: rgba(255,255,255,0.75);
+      max-width: 420px; margin-bottom: 28px;
     }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .btn-main {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 10px; }
+    .hero-btn-primary {
       font-family: 'DM Sans', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 600;
-      padding: 14px 32px;
-      background: var(--orange);
-      color: var(--white);
-      border-radius: 100px;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-      box-shadow: 0 4px 20px rgba(240,112,64,0.4);
+      font-size: 0.9rem; font-weight: 500;
+      padding: 13px 30px;
+      background: var(--white); color: var(--ink);
+      border: none; border-radius: 100px;
+      cursor: pointer; text-decoration: none;
+      transition: opacity 0.2s, transform 0.15s;
     }
-    .btn-main:hover { background: var(--orange-deep); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(240,112,64,0.5); }
-
-    .btn-ghost {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+    .hero-btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+    .hero-btn-outline {
       font-family: 'DM Sans', sans-serif;
-      font-size: 0.9rem;
-      font-weight: 600;
-      padding: 13px 26px;
-      background: rgba(255,255,255,0.15);
-      color: var(--white);
+      font-size: 0.9rem; font-weight: 500;
+      padding: 12px 26px;
+      background: transparent; color: var(--white);
+      border: 1px solid rgba(255,255,255,0.45);
       border-radius: 100px;
-      text-decoration: none;
-      border: 1.5px solid rgba(255,255,255,0.4);
-      cursor: pointer;
-      transition: background 0.2s, transform 0.15s;
-      backdrop-filter: blur(8px);
+      cursor: pointer; text-decoration: none;
+      transition: border-color 0.2s, background 0.2s;
     }
-    .btn-ghost:hover { background: rgba(255,255,255,0.25); transform: translateY(-1px); }
+    .hero-btn-outline:hover { border-color: rgba(255,255,255,0.8); background: rgba(255,255,255,0.08); }
 
-    .hero-social-strip {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+    /* social stack on hero right */
+    .hero-social {
+      display: flex; flex-direction: column; gap: 8px;
       flex-shrink: 0;
-      opacity: 0;
-      animation: fadeUp 0.7s 0.4s ease forwards;
+      opacity: 0; animation: up 0.7s 0.3s ease forwards;
     }
-
-    .social-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      padding: 10px 18px;
-      border-radius: 100px;
+    .hero-social-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.78rem; font-weight: 500;
+      color: rgba(255,255,255,0.85);
       text-decoration: none;
-      color: var(--white);
-      transition: transform 0.15s, opacity 0.15s;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 9px 16px; border-radius: 100px;
+      backdrop-filter: blur(8px);
+      transition: background 0.2s;
       white-space: nowrap;
     }
-    .social-pill:hover { transform: translateY(-2px); opacity: 0.9; }
-    .social-pill.fb { background: var(--fb); }
-    .social-pill.ig { background: linear-gradient(135deg, var(--ig-from), var(--ig-to)); }
+    .hero-social-link:hover { background: rgba(255,255,255,0.22); }
+    .hero-social-link svg { flex-shrink: 0; }
 
-    .social-pill-icon {
-      width: 20px; height: 20px;
-      display: flex; align-items: center; justify-content: center;
-    }
-
-    /* ─── SECTION BASE ─── */
-    .section { padding: 72px 24px; }
-    .section-inner { max-width: 1080px; margin: 0 auto; }
-    .section-label {
-      font-size: 0.68rem; font-weight: 600;
-      letter-spacing: 0.15em; text-transform: uppercase;
-      color: var(--orange); margin-bottom: 10px;
-    }
-    .section-heading {
-      font-family: 'Fraunces', serif;
-      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-      font-weight: 700;
-      line-height: 1.12;
-      letter-spacing: -0.02em;
-      color: var(--text);
-      margin-bottom: 16px;
-    }
-    .section-body { font-size: 1rem; line-height: 1.8; color: var(--text-mid); max-width: 640px; }
-
-    .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
-
-    /* ─── SOCIAL SECTION ─── */
-    .social-section { background: var(--white); }
-
-    .social-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      margin-top: 40px;
-      align-items: start;
-    }
-
-    .social-card {
-      background: var(--cream);
-      border-radius: 24px;
-      border: 1px solid var(--border);
-      overflow: hidden;
-    }
-
-    .social-card-header {
-      padding: 24px 24px 20px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .social-icon-wrap {
-      width: 48px; height: 48px;
-      border-radius: 14px;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-    .social-icon-wrap.fb { background: var(--fb); }
-    .social-icon-wrap.ig { background: linear-gradient(135deg, var(--ig-from), var(--ig-to)); }
-
-    .social-icon-wrap svg { width: 24px; height: 24px; fill: white; }
-
-    .social-meta { flex: 1; }
-    .social-name { font-weight: 700; font-size: 1rem; color: var(--text); }
-    .social-handle { font-size: 0.78rem; color: var(--text-light); margin-top: 1px; }
-
-    .social-follow-btn {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.82rem;
-      font-weight: 700;
-      padding: 9px 20px;
-      border-radius: 100px;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      color: var(--white);
-      transition: opacity 0.2s, transform 0.15s;
-      flex-shrink: 0;
-    }
-    .social-follow-btn:hover { opacity: 0.88; transform: translateY(-1px); }
-    .social-follow-btn.fb { background: var(--fb); }
-    .social-follow-btn.ig { background: linear-gradient(135deg, var(--ig-from), var(--ig-to)); }
-
-    .social-card-body { padding: 20px 24px 24px; }
-
-    .fb-embed-wrap {
-      border-radius: 14px;
-      overflow: hidden;
-      background: var(--white);
-      border: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 500px;
-    }
-
-    .ig-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 4px;
-      border-radius: 14px;
-      overflow: hidden;
-    }
-    .ig-grid-item {
-      aspect-ratio: 1;
-      overflow: hidden;
-      position: relative;
-      background: var(--sand);
-    }
-    .ig-grid-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.3s ease;
-    }
-    .ig-grid-item:hover img { transform: scale(1.05); }
-    .ig-grid-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0);
-      transition: background 0.3s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .ig-grid-item:hover .ig-grid-overlay { background: rgba(0,0,0,0.25); }
-
-    .ig-more-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      margin-top: 14px;
-      padding: 11px 0;
-      background: var(--white);
-      border: 1.5px solid var(--border);
-      border-radius: 100px;
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--text-mid);
-      transition: border-color 0.2s, color 0.2s;
-    }
-    .ig-more-btn:hover { border-color: #E1306C; color: #E1306C; }
-
-    /* ─── PHOTO MOSAIC ─── */
-    .mosaic-section { background: var(--cream); padding: 0; }
+    /* ── MOSAIC ── */
     .mosaic {
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      grid-template-rows: 300px 220px;
-      gap: 4px;
+      grid-template-columns: 2.2fr 1fr 1fr;
+      grid-template-rows: 260px 200px;
+      gap: 3px;
     }
-    .mosaic-item { overflow: hidden; background: var(--sand); }
-    .mosaic-item img {
-      width: 100%; height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.4s ease;
-    }
-    .mosaic-item:hover img { transform: scale(1.04); }
-    .mosaic-item.span-col { grid-row: span 2; }
+    .mosaic-cell { overflow: hidden; background: var(--stone); }
+    .mosaic-cell img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.45s ease; }
+    .mosaic-cell:hover img { transform: scale(1.04); }
+    .mosaic-cell.tall { grid-row: span 2; }
 
-    /* ─── QUICK FACTS ─── */
-    .facts { background: var(--blue-pale); }
-    .facts-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      margin-top: 40px;
-    }
-    .fact-card {
-      background: var(--white);
-      border-radius: 18px;
-      padding: 28px 22px;
-      border: 1px solid var(--blue-soft);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .fact-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(74,144,217,0.12); }
-    .fact-icon { font-size: 1.8rem; margin-bottom: 12px; }
-    .fact-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue); margin-bottom: 4px; }
-    .fact-value { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 700; color: var(--text); line-height: 1.1; }
-    .fact-sub { margin-top: 4px; font-size: 0.82rem; color: var(--text-light); }
+    /* ── DIVIDER ── */
+    hr { border: none; border-top: 1px solid var(--border); }
 
-    /* ─── SPOTIFY ─── */
-    .spotify-section { background: var(--text); }
-    .spotify-inner {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 64px 24px;
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 56px;
-      align-items: center;
+    /* ── SECTION ── */
+    .section { padding: 80px 48px; }
+    .section-inner { max-width: 1040px; margin: 0 auto; }
+    .eyebrow {
+      font-size: 0.65rem; font-weight: 500; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--accent);
+      margin-bottom: 10px; display: block;
     }
-    .spotify-copy { }
-    .spotify-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--spotify);
-      margin-bottom: 16px;
-    }
-    .spotify-title {
+    h2 {
       font-family: 'Fraunces', serif;
-      font-size: clamp(1.8rem, 3vw, 2.6rem);
-      font-weight: 700;
-      line-height: 1.1;
-      letter-spacing: -0.02em;
-      color: var(--white);
+      font-size: clamp(1.9rem, 3.5vw, 3rem);
+      font-weight: 700; line-height: 1.08;
+      letter-spacing: -0.025em; color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .lead { font-size: 1rem; line-height: 1.8; color: var(--mid); max-width: 580px; }
+
+    /* ── SOCIAL SECTION ── */
+    .social-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 24px; margin-top: 44px;
+    }
+    .social-block {
+      background: var(--off);
+      border: 1px solid var(--border);
+      border-radius: 20px; overflow: hidden;
+    }
+    .social-block-head {
+      padding: 20px 22px 16px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+    .social-platform {
+      display: flex; align-items: center; gap: 10px;
+    }
+    .social-icon {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: var(--stone);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .social-icon svg { width: 18px; height: 18px; }
+    .social-name { font-size: 0.9rem; font-weight: 500; color: var(--ink); }
+    .social-handle { font-size: 0.75rem; color: var(--muted); margin-top: 1px; }
+
+    /* single shared link style — text link, no colored box */
+    .social-link-btn {
+      font-size: 0.78rem; font-weight: 500;
+      color: var(--ink);
+      text-decoration: none;
+      display: inline-flex; align-items: center; gap: 4px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1px;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .social-link-btn:hover { color: var(--accent); border-color: var(--accent); }
+
+    .social-block-body { padding: 16px 18px 20px; }
+
+    .fb-embed { border-radius: 12px; overflow: hidden; background: var(--white); border: 1px solid var(--border); min-height: 460px; display: flex; align-items: flex-start; }
+    .fb-embed iframe { width: 100%; height: 460px; border: none; display: block; }
+
+    .ig-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; border-radius: 12px; overflow: hidden; }
+    .ig-cell { aspect-ratio: 1; overflow: hidden; background: var(--stone); position: relative; }
+    .ig-cell img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s; }
+    .ig-cell:hover img { transform: scale(1.06); }
+
+    .ig-cta {
+      display: block; text-align: center;
+      margin-top: 12px;
+      font-size: 0.82rem; font-weight: 500; color: var(--mid);
+      text-decoration: none;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .ig-cta:hover { color: var(--ink); border-color: var(--ink); }
+
+    /* ── FACTS ── */
+    .facts-bg { background: var(--off); }
+    .facts-grid {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      gap: 2px; margin-top: 44px;
+      border: 1px solid var(--border); border-radius: 16px; overflow: hidden;
+    }
+    .fact {
+      padding: 28px 24px;
+      background: var(--white);
+      border-right: 1px solid var(--border);
+    }
+    .fact:last-child { border-right: none; }
+    .fact-label { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+    .fact-value { font-family: 'Fraunces', serif; font-size: 1.55rem; font-weight: 700; color: var(--ink); line-height: 1.1; }
+    .fact-sub { font-size: 0.78rem; color: var(--muted); margin-top: 4px; }
+
+    /* ── SPOTIFY ── */
+    .spotify-bg { background: var(--ink); }
+    .spotify-inner {
+      max-width: 1040px; margin: 0 auto;
+      padding: 80px 48px;
+      display: grid; grid-template-columns: 1fr 1.15fr;
+      gap: 64px; align-items: center;
+    }
+    .spotify-eyebrow {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 0.65rem; font-weight: 500; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--spotify);
       margin-bottom: 16px;
     }
-    .spotify-title em { font-style: italic; color: var(--spotify); }
-    .spotify-desc { font-size: 0.98rem; line-height: 1.78; color: rgba(255,255,255,0.65); margin-bottom: 28px; }
-    .spotify-open-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.88rem;
-      font-weight: 700;
-      padding: 12px 26px;
-      background: var(--spotify);
-      color: var(--text);
-      border-radius: 100px;
-      text-decoration: none;
-      transition: opacity 0.2s, transform 0.15s;
-    }
-    .spotify-open-btn:hover { opacity: 0.88; transform: translateY(-1px); }
-    .spotify-player {
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-    }
-    .spotify-player iframe {
-      width: 100%;
-      height: 380px;
-      border: none;
-      display: block;
-    }
-
-    /* ─── MEMBERSHIP ─── */
-    .membership { background: var(--orange-pale); }
-    .membership-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 56px;
-      align-items: start;
-      margin-top: 40px;
-    }
-    .price-card {
-      background: var(--white);
-      border-radius: 24px;
-      padding: 40px 36px;
-      border: 1px solid var(--orange-soft);
-      box-shadow: 0 8px 32px rgba(240,112,64,0.08);
-    }
-    .price-top { display: flex; align-items: flex-end; gap: 4px; margin-bottom: 8px; }
-    .price-amount { font-family: 'Fraunces', serif; font-size: 4.5rem; font-weight: 700; line-height: 1; color: var(--orange); letter-spacing: -0.03em; }
-    .price-unit { font-size: 1rem; color: var(--text-light); margin-bottom: 10px; }
-    .price-desc { font-size: 0.88rem; color: var(--text-light); margin-bottom: 28px; line-height: 1.5; }
-    .price-includes { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
-    .price-includes li {
-      display: flex; align-items: center; gap: 10px;
-      font-size: 0.9rem; color: var(--text-mid);
-    }
-    .price-includes li::before {
-      content: '';
-      width: 18px; height: 18px;
-      background: var(--orange-pale);
-      border: 1.5px solid var(--orange-soft);
-      border-radius: 50%;
-      flex-shrink: 0;
-      background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L3.5 6.5L9 1' stroke='%23F07040' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    .membership-copy p { font-size: 1rem; line-height: 1.82; color: var(--text-mid); }
-    .membership-copy p + p { margin-top: 16px; }
-
-    /* ─── FAQ ─── */
-    .faq { background: var(--white); }
-    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 40px; }
-    details.faq-item {
-      background: var(--cream);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      overflow: hidden;
-      transition: box-shadow 0.2s;
-    }
-    details.faq-item[open] { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
-    details.faq-item summary {
-      list-style: none;
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 16px; padding: 20px 22px;
-      cursor: pointer; font-weight: 600; font-size: 0.95rem;
-      color: var(--text); line-height: 1.4; user-select: none;
-    }
-    details.faq-item summary::-webkit-details-marker { display: none; }
-    details.faq-item summary::after { content: '+'; font-size: 1.4rem; font-weight: 300; color: var(--orange); flex-shrink: 0; transition: transform 0.25s; }
-    details.faq-item[open] summary::after { transform: rotate(45deg); }
-    .faq-answer { padding: 16px 22px 20px; font-size: 0.92rem; line-height: 1.78; color: var(--text-mid); border-top: 1px solid var(--border); }
-
-    /* ─── LOCATION ─── */
-    .location { background: var(--blue-pale); }
-    .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; margin-top: 40px; }
-    .location-copy p { font-size: 1rem; line-height: 1.82; color: var(--text-mid); }
-    .location-copy p + p { margin-top: 14px; }
-    .location-map { background: var(--white); border-radius: 20px; overflow: hidden; border: 1px solid var(--blue-soft); box-shadow: 0 8px 24px rgba(74,144,217,0.08); }
-    .location-map iframe { width: 100%; height: 320px; border: none; display: block; }
-    .location-address { padding: 18px 20px; font-size: 0.88rem; color: var(--text-mid); font-weight: 500; }
-
-    /* ─── CONTACT ─── */
-    .contact { background: var(--cream); }
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; margin-top: 40px; }
-    .contact-card { background: var(--white); border-radius: 20px; padding: 36px 32px; border: 1px solid var(--border); box-shadow: 0 4px 20px rgba(0,0,0,0.04); }
-    .contact-leader { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 6px; }
-    .contact-role { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--orange); margin-bottom: 28px; }
-    .contact-row { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; font-size: 0.92rem; }
-    .c-icon { width: 38px; height: 38px; background: var(--blue-pale); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
-    .contact-row a { color: var(--blue-deep); text-decoration: none; font-weight: 500; }
-    .contact-row a:hover { text-decoration: underline; }
-    .fb-link {
+    .spotify-eyebrow svg { width: 14px; height: 14px; fill: var(--spotify); }
+    h2.spotify-h { color: var(--white); }
+    h2.spotify-h em { font-style: italic; color: rgba(255,255,255,0.5); }
+    .spotify-body { font-size: 0.95rem; line-height: 1.78; color: rgba(255,255,255,0.55); margin-bottom: 28px; }
+    .spotify-open {
       display: inline-flex; align-items: center; gap: 8px;
-      margin-top: 20px; padding: 10px 22px;
-      background: var(--fb); color: var(--white);
-      border-radius: 100px; font-size: 0.82rem; font-weight: 600;
-      text-decoration: none; transition: opacity 0.2s;
+      font-size: 0.82rem; font-weight: 500;
+      padding: 11px 24px;
+      background: var(--spotify); color: var(--ink);
+      border: none; border-radius: 100px;
+      text-decoration: none;
+      transition: opacity 0.2s;
     }
-    .fb-link:hover { opacity: 0.88; }
+    .spotify-open:hover { opacity: 0.88; }
+    .spotify-open svg { width: 16px; height: 16px; fill: var(--ink); }
+    .spotify-player { border-radius: 16px; overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.5); }
+    .spotify-player iframe { width: 100%; height: 360px; border: none; display: block; }
 
-    .contact-info { display: flex; flex-direction: column; gap: 16px; }
-    .info-box { background: var(--white); border-radius: 16px; padding: 22px 20px; border: 1px solid var(--border); }
-    .info-box-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-light); margin-bottom: 6px; }
-    .info-box-value { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; color: var(--text); }
-    .info-box-sub { font-size: 0.82rem; color: var(--text-light); margin-top: 2px; }
+    /* ── MEMBERSHIP ── */
+    .membership-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 64px; align-items: start; margin-top: 44px;
+    }
+    .price-block {
+      background: var(--off); border: 1px solid var(--border);
+      border-radius: 20px; padding: 36px 32px;
+    }
+    .price-num {
+      font-family: 'Fraunces', serif;
+      font-size: 5rem; font-weight: 700; line-height: 1;
+      color: var(--accent); letter-spacing: -0.04em;
+    }
+    .price-unit { font-size: 1rem; color: var(--muted); margin-bottom: 6px; }
+    .price-desc { font-size: 0.82rem; color: var(--muted); margin-bottom: 24px; }
+    .price-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+    .price-list li {
+      font-size: 0.88rem; color: var(--mid);
+      display: flex; align-items: baseline; gap: 8px;
+    }
+    .price-list li::before { content: '–'; color: var(--accent); flex-shrink: 0; }
+    .membership-copy p { font-size: 0.95rem; line-height: 1.82; color: var(--mid); }
+    .membership-copy p + p { margin-top: 14px; }
 
-    /* ─── SIGNUP CTA ─── */
-    .signup { background: var(--orange-pale); text-align: center; }
-    .signup .section-inner { display: flex; flex-direction: column; align-items: center; }
-    .signup .section-heading { max-width: 520px; }
-    .signup .section-body { text-align: center; margin-bottom: 32px; }
+    /* ── FAQ ── */
+    .faq-bg { background: var(--off); }
+    .faq-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 1px; margin-top: 44px;
+      border: 1px solid var(--border); border-radius: 16px; overflow: hidden;
+    }
+    details.faq {
+      background: var(--white);
+      border-right: 1px solid var(--border);
+    }
+    details.faq:nth-child(even) { border-right: none; }
+    details.faq summary {
+      list-style: none; cursor: pointer;
+      padding: 20px 22px;
+      font-size: 0.9rem; font-weight: 500; color: var(--ink);
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      user-select: none; line-height: 1.4;
+    }
+    details.faq summary::-webkit-details-marker { display: none; }
+    details.faq summary::after {
+      content: '+'; font-size: 1.3rem; font-weight: 300;
+      color: var(--muted); flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    details.faq[open] summary::after { transform: rotate(45deg); }
+    .faq-ans {
+      padding: 0 22px 18px;
+      font-size: 0.85rem; line-height: 1.72; color: var(--mid);
+      border-top: 1px solid var(--border); padding-top: 14px;
+    }
 
-    /* ─── FOOTER ─── */
+    /* ── LOCATION ── */
+    .location-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 64px; align-items: start; margin-top: 44px;
+    }
+    .location-copy p { font-size: 0.95rem; line-height: 1.82; color: var(--mid); }
+    .location-copy p + p { margin-top: 14px; }
+    .map-wrap {
+      border-radius: 16px; overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .map-wrap iframe { width: 100%; height: 300px; border: none; display: block; }
+    .map-addr { padding: 14px 18px; font-size: 0.82rem; color: var(--mid); border-top: 1px solid var(--border); }
+
+    /* ── SIGNUP CTA ── */
+    .cta-bg { background: var(--off); text-align: center; }
+    .cta-inner { max-width: 520px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+    .cta-inner .lead { text-align: center; margin-bottom: 28px; }
+
+    /* ── CONTACT ── */
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 48px; align-items: start; margin-top: 44px;
+    }
+    .contact-card {
+      background: var(--off); border: 1px solid var(--border);
+      border-radius: 20px; padding: 32px 28px;
+    }
+    .contact-name { font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 4px; }
+    .contact-role { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 24px; }
+    .contact-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; font-size: 0.88rem; }
+    .c-icon {
+      width: 34px; height: 34px; background: var(--stone); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.9rem; flex-shrink: 0;
+    }
+    .contact-row a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 1px; }
+    .contact-row a:hover { border-color: var(--ink); }
+    .contact-fb {
+      display: inline-flex; align-items: center; gap: 6px;
+      margin-top: 16px; font-size: 0.82rem; font-weight: 500;
+      color: var(--mid); text-decoration: none;
+      border-bottom: 1px solid var(--border); padding-bottom: 1px;
+      transition: color 0.15s; cursor: pointer; border: none; background: none;
+    }
+    .contact-fb:hover { color: var(--ink); }
+    .info-list { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
+    .info-item {
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--border);
+      background: var(--white);
+    }
+    .info-item:last-child { border-bottom: none; }
+    .info-label { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+    .info-val { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--ink); }
+    .info-sub { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+    .info-sub a { color: var(--spotify); text-decoration: none; font-weight: 500; }
+
+    /* ── FOOTER ── */
     footer {
-      background: var(--sand);
-      border-top: 1px solid var(--border);
-      padding: 32px 24px;
+      background: var(--stone); border-top: 1px solid var(--border);
+      padding: 28px 48px;
       display: flex; align-items: center; justify-content: space-between;
       flex-wrap: wrap; gap: 16px;
     }
     .footer-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
-    .footer-logo img { height: 28px; width: 28px; border-radius: 6px; object-fit: contain; }
-    .footer-logo span { font-family: 'Fraunces', serif; font-size: 0.9rem; font-weight: 600; color: var(--text); }
-    .footer-social { display: flex; gap: 10px; }
-    .footer-social a {
-      display: inline-flex; align-items: center; gap: 6px;
-      font-size: 0.78rem; font-weight: 600;
-      padding: 7px 14px; border-radius: 100px;
-      text-decoration: none; color: var(--white);
-      transition: opacity 0.2s;
+    .footer-logo img { height: 26px; width: 26px; border-radius: 5px; object-fit: contain; }
+    .footer-logo span { font-family: 'Fraunces', serif; font-size: 0.88rem; font-weight: 600; color: var(--ink); }
+    .footer-links { display: flex; gap: 6px; align-items: center; }
+    .footer-links a {
+      font-size: 0.78rem; color: var(--mid); text-decoration: none;
+      padding: 6px 12px; border: 1px solid var(--border);
+      border-radius: 100px; background: var(--white);
+      transition: color 0.15s, border-color 0.15s;
     }
-    .footer-social a:hover { opacity: 0.8; }
-    .footer-social a.fb { background: var(--fb); }
-    .footer-social a.ig { background: linear-gradient(135deg, var(--ig-from), var(--ig-to)); }
-    footer p.copy { font-size: 0.78rem; color: var(--text-light); width: 100%; text-align: center; padding-top: 12px; border-top: 1px solid var(--border); margin-top: 4px; }
+    .footer-links a:hover { color: var(--ink); border-color: var(--ink); }
+    footer p.copy {
+      font-size: 0.74rem; color: var(--muted); width: 100%;
+      text-align: center; border-top: 1px solid var(--border);
+      padding-top: 16px; margin-top: 4px;
+    }
 
-    /* ─── REVEAL ─── */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(22px); }
+    /* ── UTILS ── */
+    @keyframes up {
+      from { opacity: 0; transform: translateY(20px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-    .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.55s ease, transform 0.55s ease; }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
 
-    /* ─── RESPONSIVE ─── */
+    /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
-      .hero-fullbleed { height: 80vh; }
-      .hero-content { flex-direction: column; align-items: flex-start; padding: 32px 24px; }
-      .hero-social-strip { flex-direction: row; }
-      .social-layout { grid-template-columns: 1fr; }
-      .mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: 220px 220px; }
-      .mosaic-item.span-col { grid-row: span 1; }
-      .spotify-inner { grid-template-columns: 1fr; }
-      .facts-grid { grid-template-columns: repeat(2, 1fr); }
+      .section { padding: 60px 24px; }
+      .spotify-inner { padding: 60px 24px; grid-template-columns: 1fr; }
+      .social-grid, .membership-grid, .location-grid, .contact-grid { grid-template-columns: 1fr; }
+      .facts-grid { grid-template-columns: 1fr 1fr; }
+      .fact { border-right: none; border-bottom: 1px solid var(--border); }
+      .fact:nth-child(odd) { border-right: 1px solid var(--border); }
+      .fact:last-child, .fact:nth-last-child(2):nth-child(odd) { border-bottom: none; }
       .faq-grid { grid-template-columns: 1fr; }
-      .membership-grid, .location-grid, .contact-grid { grid-template-columns: 1fr; gap: 32px; }
-      .nav-social { display: none; }
+      details.faq { border-right: none; border-bottom: 1px solid var(--border); }
+      details.faq:last-child { border-bottom: none; }
+      .mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: 200px 200px; }
+      .mosaic-cell.tall { grid-row: span 1; }
+      .hero-content { flex-direction: column; align-items: flex-start; padding: 28px 24px 36px; }
+      .hero-social { flex-direction: row; }
+      nav { padding: 0 20px; }
+      footer { padding: 24px 20px; }
     }
-
-    @media (max-width: 540px) {
-      nav { padding: 0 16px; }
-      .nav-logo-text span { display: none; }
-      .section { padding: 52px 16px; }
-      .facts-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-      h1.hero-title { font-size: 2.6rem; }
-      .price-amount { font-size: 3.5rem; }
+    @media (max-width: 600px) {
+      h1 { font-size: 2.8rem; }
+      .nav-social-links { display: none; }
       .mosaic { grid-template-columns: 1fr; grid-template-rows: auto; }
-      .mosaic-item { height: 220px; }
-      footer { padding: 24px 16px; }
+      .mosaic-cell { height: 220px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ─── NAV ─── -->
-  <nav>
-    <a class="nav-logo" href="/">
-      <img src="beach.png" alt="Gärdet Beach Volley logotyp" />
-      <div class="nav-logo-text">
-        <strong>Gärdet Beach Volley</strong>
-        <span>Ladugårdsgärdet · Stockholm</span>
-      </div>
-    </a>
-    <div class="nav-right">
-      <div class="nav-social">
-        <a href="https://www.facebook.com/profile.php?id=61572115994924" target="_blank" rel="noopener" class="nav-social-btn fb">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          Facebook
-        </a>
-        <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="nav-social-btn ig">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-          Instagram
-        </a>
-      </div>
-      <button class="nav-cta open-popup">Anmäl dig →</button>
-    </div>
-  </nav>
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="/">
+    <img src="beach.png" alt="Gärdet Beach Volley" />
+    <strong>Gärdet Beach Volley</strong>
+  </a>
+  <div class="nav-right">
+    <nav class="nav-social-links" aria-label="Sociala medier">
+      <a href="https://www.facebook.com/profile.php?id=61572115994924" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <div class="nav-divider" aria-hidden="true"></div>
+    <button class="btn-primary open-popup">Anmäl dig</button>
+  </div>
+</nav>
 
-  <!-- ─── POPUP ─── -->
-  <div class="popup-overlay" id="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
-    <div class="popup">
-      <div class="popup-header">
-        <div>
-          <div class="popup-title" id="popup-title">Anmäl dig till säsongen 🏐</div>
-          <div class="popup-subtitle">Gärdet Beach Volley &middot; Säsong 2026 &middot; Ladugårdsgärdet, Stockholm</div>
-        </div>
-        <button class="popup-close" id="popup-close" aria-label="Stäng">✕</button>
+<!-- POPUP -->
+<div class="popup-overlay" id="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-h">
+  <div class="popup">
+    <div class="popup-header">
+      <div>
+        <div class="popup-title" id="popup-h">Anmäl dig till säsongen 🏐</div>
+        <div class="popup-sub">Gärdet Beach Volley · Säsong 2026 · Ladugårdsgärdet</div>
       </div>
-      <div class="popup-steps">
-        <div class="popup-step">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <strong>Fyll i anmälningsformuläret</strong>
-            <p>Ange dina uppgifter nedan. Det tar bara någon minut.</p>
-          </div>
-        </div>
-        <div class="popup-step">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            <strong>Ta emot bekräftelsemejl med Swish QR-kod</strong>
-            <p>Du får ett bekräftelsemejl med en Swish QR-kod för betalning — 150 kr för hela säsongen 2026.</p>
-          </div>
-        </div>
-        <div class="popup-step">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            <strong>Betala 150 kr via Swish</strong>
-            <p>Scanna QR-koden med din bankapp. Gäller hela sommarsäsongen 2026.</p>
-          </div>
-        </div>
-        <div class="popup-step">
-          <div class="step-num">4</div>
-          <div class="step-content">
-            <strong>Få inloggning &amp; boka dina speltillfällen</strong>
-            <p>Du får inloggningsuppgifter till spelschema och bokningssystemet. Vi spelar tre gånger i veckan!</p>
-          </div>
-        </div>
-      </div>
-      <div class="popup-form-section">
-        <span class="popup-form-label">Fyll i formuläret nedan</span>
-        <div class="popup-iframe-wrap">
-          <iframe src="https://forms.fillout.com/t/tP3N77PHUmus" title="Anmälningsformulär Gärdet Beach Volley 2026" allow="fullscreen"></iframe>
-        </div>
-      </div>
+      <button class="popup-close" id="popup-close" aria-label="Stäng">✕</button>
+    </div>
+    <div class="popup-steps">
+      <div class="popup-step"><div class="step-num">1</div><div class="step-content"><strong>Fyll i formuläret</strong><p>Ange dina uppgifter nedan — tar bara någon minut.</p></div></div>
+      <div class="popup-step"><div class="step-num">2</div><div class="step-content"><strong>Bekräftelsemejl med Swish QR</strong><p>Du får en QR-kod för betalning av 150 kr direkt per mejl.</p></div></div>
+      <div class="popup-step"><div class="step-num">3</div><div class="step-content"><strong>Betala 150 kr via Swish</strong><p>Scanna koden med din bankapp. Gäller hela sommarsäsongen.</p></div></div>
+      <div class="popup-step"><div class="step-num">4</div><div class="step-content"><strong>Få tillgång till spelschema</strong><p>Du får inloggningsuppgifter och kan boka platser. Vi spelar tre gånger i veckan!</p></div></div>
+    </div>
+    <div class="popup-form">
+      <span class="popup-form-label">Formulär</span>
+      <iframe src="https://forms.fillout.com/t/tP3N77PHUmus" title="Anmälningsformulär Gärdet Beach Volley 2026" allow="fullscreen"></iframe>
     </div>
   </div>
+</div>
 
-  <main>
+<main>
 
-  <!-- ─── HERO ─── -->
-  <section class="hero">
-    <div class="hero-fullbleed">
-      <img src="playing1.jpg" alt="Beachvolleyboll på Ladugårdsgärdet, Stockholm" />
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <div class="hero-text-block">
-          <div class="hero-eyebrow">🏐 Säsong 2026 · Ladugårdsgärdet, Stockholm</div>
-          <h1 class="hero-title">
-            Beachvolley<br>på <em>Gärdet</em>
-          </h1>
-          <p class="hero-desc">
-            Ett öppet, blandat lag på Stockholms finaste sandplaner. Alla nivåer välkomna — säsongsstart 25 maj.
-          </p>
-          <div class="hero-actions">
-            <button class="btn-main open-popup">Anmäl dig — 150 kr →</button>
-            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="btn-ghost">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-              Följ oss
-            </a>
-          </div>
-        </div>
-        <div class="hero-social-strip">
-          <a href="https://www.facebook.com/profile.php?id=61572115994924" target="_blank" rel="noopener" class="social-pill fb">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            Följ på Facebook
-          </a>
-          <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="social-pill ig">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-            @gardet.beachvolley
-          </a>
-        </div>
+<!-- HERO -->
+<section class="hero">
+  <img src="playing1.jpg" alt="Beachvolleyboll på Ladugårdsgärdet, Stockholm" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <span class="hero-tag">Säsong 2026 · Ladugårdsgärdet, Stockholm</span>
+      <h1>Beachvolley<br>på <em>Gärdet</em></h1>
+      <p class="hero-sub">Öppet, blandat lag på Stockholms finaste sandplaner. Alla nivåer välkomna — start 25 maj.</p>
+      <div class="hero-ctas">
+        <button class="hero-btn-primary open-popup">Anmäl dig — 150 kr</button>
+        <a href="#social" class="hero-btn-outline">Följ oss</a>
       </div>
     </div>
-  </section>
-
-  <!-- ─── PHOTO MOSAIC ─── -->
-  <div class="mosaic-section reveal">
-    <div class="mosaic">
-      <div class="mosaic-item span-col">
-        <img src="playing1.jpg" alt="Match på Gärdet" />
-      </div>
-      <div class="mosaic-item">
-        <img src="playing2.png" alt="Spel på sandplanen" />
-      </div>
-      <div class="mosaic-item">
-        <img src="beach.png" alt="Gärdet Beach Volley" />
-      </div>
-      <div class="mosaic-item">
-        <img src="playing2.png" alt="Beachvolley Stockholm" />
-      </div>
-      <div class="mosaic-item">
-        <img src="playing1.jpg" alt="Sommarsäsongen på Gärdet" />
-      </div>
-    </div>
-  </div>
-
-  <hr class="divider" />
-
-  <!-- ─── SOCIAL ─── -->
-  <section class="section social-section" id="social">
-    <div class="section-inner">
-      <p class="section-label reveal">Följ oss</p>
-      <h2 class="section-heading reveal">Håll dig uppdaterad</h2>
-      <p class="section-body reveal">Bilder från träningar, matchdagar och allt som händer på sandplanen. Följ oss — och lägg gärna till egna bilder!</p>
-
-      <div class="social-layout">
-
-        <!-- FACEBOOK -->
-        <div class="social-card reveal">
-          <div class="social-card-header">
-            <div class="social-icon-wrap fb">
-              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </div>
-            <div class="social-meta">
-              <div class="social-name">Facebook</div>
-              <div class="social-handle">Gärdet Beach Volley</div>
-            </div>
-            <a href="https://www.facebook.com/profile.php?id=61572115994924" target="_blank" rel="noopener" class="social-follow-btn fb">
-              Följ sidan
-            </a>
-          </div>
-          <div class="social-card-body">
-            <div class="fb-embed-wrap">
-              <iframe
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61572115994924&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-                width="500"
-                height="500"
-                style="border:none;overflow:hidden;width:100%;height:500px;"
-                scrolling="no"
-                frameborder="0"
-                allowfullscreen="true"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-              </iframe>
-            </div>
-          </div>
-        </div>
-
-        <!-- INSTAGRAM -->
-        <div class="social-card reveal">
-          <div class="social-card-header">
-            <div class="social-icon-wrap ig">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
-            </div>
-            <div class="social-meta">
-              <div class="social-name">Instagram</div>
-              <div class="social-handle">@gardet.beachvolley</div>
-            </div>
-            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="social-follow-btn ig">
-              Följ oss
-            </a>
-          </div>
-          <div class="social-card-body">
-            <div class="ig-grid">
-              <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-grid-item">
-                <img src="playing1.jpg" alt="Instagram bild 1" />
-                <div class="ig-grid-overlay"></div>
-              </a>
-              <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-grid-item">
-                <img src="playing2.png" alt="Instagram bild 2" />
-                <div class="ig-grid-overlay"></div>
-              </a>
-              <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-grid-item">
-                <img src="beach.png" alt="Instagram bild 3" />
-                <div class="ig-grid-overlay"></div>
-              </a>
-              <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-grid-item">
-                <img src="playing2.png" alt="Instagram bild 4" />
-                <div class="ig-grid-overlay"></div>
-              </a>
-              <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-grid-item">
-                <img src="playing1.jpg" alt="Instagram bild 5" />
-                <div class="ig-grid-overlay"></div>
-              </a>
-              <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-grid-item">
-                <img src="beach.png" alt="Instagram bild 6" />
-                <div class="ig-grid-overlay"></div>
-              </a>
-            </div>
-            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-more-btn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-              Se alla bilder på Instagram →
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- ─── QUICK FACTS ─── -->
-  <section class="section facts" id="info">
-    <div class="section-inner">
-      <p class="section-label reveal">Snabbfakta</p>
-      <h2 class="section-heading reveal">Allt du behöver veta</h2>
-      <div class="facts-grid">
-        <div class="fact-card reveal">
-          <div class="fact-icon">📅</div>
-          <div class="fact-label">Säsonsstart</div>
-          <div class="fact-value">25 maj 2026</div>
-          <div class="fact-sub">Tre speltillfällen i veckan</div>
-        </div>
-        <div class="fact-card reveal">
-          <div class="fact-icon">📍</div>
-          <div class="fact-label">Spelplats</div>
-          <div class="fact-value">Ladugårdsgärdet</div>
-          <div class="fact-sub">Stockholm, Östermalm</div>
-        </div>
-        <div class="fact-card reveal">
-          <div class="fact-icon">🏐</div>
-          <div class="fact-label">Lagtyp</div>
-          <div class="fact-value">Blandat lag</div>
-          <div class="fact-sub">Damer &amp; herrar välkomna</div>
-        </div>
-        <div class="fact-card reveal">
-          <div class="fact-icon">💳</div>
-          <div class="fact-label">Medlemsavgift</div>
-          <div class="fact-value">150 kr</div>
-          <div class="fact-sub">Hela sommarsäsongen 2026</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- ─── SPOTIFY ─── -->
-  <section id="playlist">
-    <div class="spotify-inner">
-      <div class="spotify-copy reveal">
-        <div class="spotify-eyebrow">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:4px"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
-          Beach 2026 · Spotify-spellista
-        </div>
-        <h2 class="spotify-title">
-          Vår <em>sommarlåtlista</em><br>— lyssna &amp; bidra
-        </h2>
-        <p class="spotify-desc">
-          Vi håller en gemensam spellista igång hela säsongen. Lägg till dina favoritlåtar och lyssna medan du spelar — ju fler som bidrar, desto bättre vibes på planen.
-        </p>
-        <a href="https://open.spotify.com/playlist/5OddZKw69YFfVWvcGrSyWR" target="_blank" rel="noopener" class="spotify-open-btn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
-          Öppna i Spotify
-        </a>
-      </div>
-      <div class="spotify-player reveal">
-        <iframe
-          src="https://open.spotify.com/embed/playlist/5OddZKw69YFfVWvcGrSyWR?utm_source=generator&theme=0"
-          width="100%"
-          height="380"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy">
-        </iframe>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- ─── MEMBERSHIP ─── -->
-  <section class="section membership" id="medlemskap">
-    <div class="section-inner">
-      <p class="section-label reveal">Medlemskap</p>
-      <h2 class="section-heading reveal">Vad ingår?</h2>
-      <div class="membership-grid">
-        <div class="price-card reveal">
-          <div class="price-top">
-            <span class="price-amount">150</span>
-            <span class="price-unit">&nbsp;kr</span>
-          </div>
-          <div class="price-desc">Engångsavgift för hela säsongen 2026</div>
-          <ul class="price-includes">
-            <li>Tillgång till alla speltillfällen under säsongen</li>
-            <li>Spelschema och tider via inloggning</li>
-            <li>Gemenskap i ett blandat, välkomnande lag</li>
-            <li>Spel på Ladugårdsgärdets sandplaner</li>
-            <li>Tillgång till lagets Spotify-spellista</li>
-          </ul>
-          <button class="btn-main open-popup">Anmäl dig nu →</button>
-        </div>
-        <div class="membership-copy reveal">
-          <p>Säsongsavgiften på 150 kr är en engångskostnad för hela sommaren 2026 — ett av Stockholms mest prisvärda sätt att hålla igång utomhus med ett socialt och välkomnande lag.</p>
-          <p>Du betalar en gång och får sedan full tillgång till lagets spelschema och bokningssystem. Alla detaljer finns när du loggar in.</p>
-          <p>Har du frågor om betalning eller vad som ingår är du alltid välkommen att kontakta lagledare Alexandra direkt.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- ─── FAQ ─── -->
-  <section class="section faq" id="faq">
-    <div class="section-inner">
-      <p class="section-label reveal">Vanliga frågor</p>
-      <h2 class="section-heading reveal">Frågor &amp; svar</h2>
-      <div class="faq-grid" style="margin-top: 32px;">
-
-        <details class="faq-item reveal">
-          <summary>Var ligger planerna?</summary>
-          <div class="faq-answer">
-            Vi spelar på sandplanerna vid Ladugårdsgärdet, nära Östermalm. Närmaste tunnelbanestation är Karlaplan (röda linjen) — ungefär 10 minuters promenad.
-          </div>
-        </details>
-
-        <details class="faq-item reveal">
-          <summary>Behöver jag ha spelat förut?</summary>
-          <div class="faq-answer">
-            Nej, absolut inte. Vi välkomnar alla oavsett erfarenhet — från kompletta nybörjare till de som spelat i många år. Fokus är glädje och gemenskap.
-          </div>
-        </details>
-
-        <details class="faq-item reveal">
-          <summary>Vad kostar det och hur betalar jag?</summary>
-          <div class="faq-answer">
-            150 kr för hela säsongen 2026. Du betalar via Swish — du får en QR-kod i bekräftelsemejlet efter anmälan.
-          </div>
-        </details>
-
-        <details class="faq-item reveal">
-          <summary>Hur ofta spelar ni?</summary>
-          <div class="faq-answer">
-            Vi spelar tre gånger i veckan under säsongen. Exakt schema med dagar och tider hittar du när du loggat in.
-          </div>
-        </details>
-
-        <details class="faq-item reveal">
-          <summary>Är laget öppet för både damer och herrar?</summary>
-          <div class="faq-answer">
-            Ja! Vi är ett blandat lag som välkomnar alla. Det spelar ingen roll om du vill spela mixed eller med ett specifikt kön — alla är välkomna.
-          </div>
-        </details>
-
-        <details class="faq-item reveal">
-          <summary>Behöver jag ha med utrustning?</summary>
-          <div class="faq-answer">
-            Bara träningskläder och bra humör! Bollar finns tillgängliga och de flesta spelar barfota eller med sandsockor. Inga speciella skor krävs.
-          </div>
-        </details>
-
-        <details class="faq-item reveal">
-          <summary>Kan jag ta med en kompis och prova?</summary>
-          <div class="faq-answer">
-            Hör av dig till Alexandra om du vill ta med en vän och prova på innan ni bestämmer er. Vi vill att alla ska känna sig trygga och välkomna.
-          </div>
-        </details>
-
-        <details class="faq-item reveal">
-          <summary>Hur anmäler jag mig?</summary>
-          <div class="faq-answer">
-            Klicka på "Anmäl dig"-knappen. Fyll i formuläret, betala 150 kr via Swish (QR-kod skickas per mejl), och du får sedan dina inloggningsuppgifter.
-          </div>
-        </details>
-
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- ─── LOCATION ─── -->
-  <section class="section location" id="hitta-hit">
-    <div class="section-inner">
-      <p class="section-label reveal">Hitta hit</p>
-      <h2 class="section-heading reveal">Vi spelar på Ladugårdsgärdet</h2>
-      <div class="location-grid">
-        <div class="location-copy reveal">
-          <p>Ladugårdsgärdet är ett av Stockholms mest älskade friluftsstråk — hemvist för stadens populäraste beachvolleybollplaner. Området ligger i östra Stockholm, nära Östermalm och Djurgården.</p>
-          <p>Närmaste tunnelbanestation är Karlaplan på röda linjen (ca 10 min promenad). Buss 69 stannar också i närheten. Med cykel tar sig de flesta hit från central Stockholm på under 15 minuter.</p>
-          <p>Gratis parkering finns längs Lidingövägen, men vi rekommenderar kollektivtrafik eller cykel.</p>
-        </div>
-        <div class="location-map reveal">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4073.5!2d18.112!3d59.349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d3a8f0b3b3b%3A0x0!2sLadug%C3%A5rdsg%C3%A4rdet%2C+Stockholm!5e0!3m2!1ssv!2sse!4v1"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            title="Karta över Ladugårdsgärdet, Stockholm">
-          </iframe>
-          <div class="location-address">📍 Ladugårdsgärdet, Stockholm — sandplanerna</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- ─── SIGN UP ─── -->
-  <section class="section signup" id="anmalan">
-    <div class="section-inner reveal">
-      <p class="section-label">Anmälan</p>
-      <h2 class="section-heading">Redo för sommaren?</h2>
-      <p class="section-body">
-        Anmäl dig nu — du får ett bekräftelsemejl med Swish QR-kod. Betalningen är 150 kr för hela säsongen. Frågor? Kontakta Alexandra direkt.
-      </p>
-      <button class="btn-main open-popup">Anmäl dig nu →</button>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- ─── CONTACT ─── -->
-  <section class="section contact" id="kontakt">
-    <div class="section-inner">
-      <p class="section-label reveal">Kontakt</p>
-      <h2 class="section-heading reveal">Frågor? Hör av dig!</h2>
-      <div class="contact-grid" style="margin-top: 32px;">
-        <div class="contact-card reveal">
-          <div class="contact-leader">Alexandra Grisanti</div>
-          <div class="contact-role">Lagledare · Gärdet Beach Volley</div>
-          <div class="contact-row">
-            <div class="c-icon">✉️</div>
-            <a href="mailto:alexandrapgrisanti@gmail.com">alexandrapgrisanti@gmail.com</a>
-          </div>
-          <div class="contact-row">
-            <div class="c-icon">📞</div>
-            <a href="tel:+46700254213">+46 70 025 42 13</a>
-          </div>
-          <a href="https://www.facebook.com/profile.php?id=61572115994924" class="fb-link" target="_blank" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            Följ oss på Facebook
-          </a>
-        </div>
-        <div class="contact-info reveal">
-          <div class="info-box">
-            <div class="info-box-label">📅 Säsonsstart</div>
-            <div class="info-box-value">25 maj 2026</div>
-            <div class="info-box-sub">Schema visas efter inloggning</div>
-          </div>
-          <div class="info-box">
-            <div class="info-box-label">📍 Spelplats</div>
-            <div class="info-box-value">Ladugårdsgärdet</div>
-            <div class="info-box-sub">Stockholm · Nära Karlaplan</div>
-          </div>
-          <div class="info-box">
-            <div class="info-box-label">💳 Avgift</div>
-            <div class="info-box-value">150 kr per säsong</div>
-            <div class="info-box-sub">Hela sommarsäsongen 2026</div>
-          </div>
-          <div class="info-box">
-            <div class="info-box-label">🎵 Spellista</div>
-            <div class="info-box-value">BEACH 2026</div>
-            <div class="info-box-sub"><a href="https://open.spotify.com/playlist/5OddZKw69YFfVWvcGrSyWR" target="_blank" rel="noopener" style="color: var(--spotify); text-decoration: none; font-weight: 600;">Öppna på Spotify →</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  </main>
-
-  <!-- ─── FOOTER ─── -->
-  <footer>
-    <a class="footer-logo" href="/">
-      <img src="beach.png" alt="Gärdet Beach Volley" />
-      <span>Gärdet Beach Volley</span>
-    </a>
-    <div class="footer-social">
-      <a href="https://www.facebook.com/profile.php?id=61572115994924" target="_blank" rel="noopener" class="fb">
+    <div class="hero-social">
+      <a href="https://www.facebook.com/profile.php?id=61572115994924" target="_blank" rel="noopener" class="hero-social-link">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
         Facebook
       </a>
-      <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
-        Instagram
+      <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="hero-social-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        @gardet.beachvolley
       </a>
     </div>
-    <p class="copy">© 2026 Gärdet Beach Volley · Ladugårdsgärdet, Stockholm · <a href="mailto:alexandrapgrisanti@gmail.com" style="color:inherit">alexandrapgrisanti@gmail.com</a></p>
-  </footer>
+  </div>
+</section>
 
-  <script>
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
-      });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-  </script>
+<!-- PHOTO MOSAIC -->
+<div class="mosaic reveal">
+  <div class="mosaic-cell tall"><img src="playing1.jpg" alt="Spel på Gärdet" /></div>
+  <div class="mosaic-cell"><img src="playing2.png" alt="Match på sandplanen" /></div>
+  <div class="mosaic-cell"><img src="beach.png" alt="Gärdet Beach Volley" /></div>
+  <div class="mosaic-cell"><img src="playing2.png" alt="Lag på Ladugårdsgärdet" /></div>
+  <div class="mosaic-cell"><img src="playing1.jpg" alt="Beachvolley Stockholm" /></div>
+</div>
 
-  <script>
-    const overlay = document.getElementById('popup-overlay');
-    function openPopup() { overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
-    function closePopup() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
-    document.querySelectorAll('.open-popup').forEach(el => el.addEventListener('click', openPopup));
-    document.getElementById('popup-close').addEventListener('click', closePopup);
-    overlay.addEventListener('click', e => { if (e.target === overlay) closePopup(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closePopup(); });
-  </script>
+<hr />
+
+<!-- SOCIAL -->
+<section class="section" id="social">
+  <div class="section-inner">
+    <span class="eyebrow reveal">Följ oss</span>
+    <h2 class="reveal">Håll dig uppdaterad</h2>
+    <p class="lead reveal">Bilder från träningar, matchdagar och allt som händer på planen. Följ oss och bidra gärna med egna bilder.</p>
+
+    <div class="social-grid">
+      <div class="social-block reveal">
+        <div class="social-block-head">
+          <div class="social-platform">
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" fill="var(--mid)"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </div>
+            <div>
+              <div class="social-name">Facebook</div>
+              <div class="social-handle">Gärdet Beach Volley</div>
+            </div>
+          </div>
+          <a href="https://www.facebook.com/profile.php?id=61572115994924" target="_blank" rel="noopener" class="social-link-btn">
+            Följ sidan ↗
+          </a>
+        </div>
+        <div class="social-block-body">
+          <div class="fb-embed">
+            <iframe
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61572115994924&tabs=timeline&width=500&height=460&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false"
+              scrolling="no" frameborder="0" allowfullscreen
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-block reveal">
+        <div class="social-block-head">
+          <div class="social-platform">
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="var(--mid)" stroke="none"/></svg>
+            </div>
+            <div>
+              <div class="social-name">Instagram</div>
+              <div class="social-handle">@gardet.beachvolley</div>
+            </div>
+          </div>
+          <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="social-link-btn">
+            Följ oss ↗
+          </a>
+        </div>
+        <div class="social-block-body">
+          <div class="ig-grid">
+            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-cell"><img src="playing1.jpg" alt="Bild 1" /></a>
+            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-cell"><img src="playing2.png" alt="Bild 2" /></a>
+            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-cell"><img src="beach.png" alt="Bild 3" /></a>
+            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-cell"><img src="playing2.png" alt="Bild 4" /></a>
+            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-cell"><img src="playing1.jpg" alt="Bild 5" /></a>
+            <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-cell"><img src="beach.png" alt="Bild 6" /></a>
+          </div>
+          <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener" class="ig-cta">
+            Se alla bilder på Instagram ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<!-- QUICK FACTS -->
+<section class="section facts-bg" id="info">
+  <div class="section-inner">
+    <span class="eyebrow reveal">Snabbfakta</span>
+    <h2 class="reveal">Allt du behöver veta</h2>
+    <div class="facts-grid reveal">
+      <div class="fact">
+        <div class="fact-label">Säsonsstart</div>
+        <div class="fact-value">25 maj 2026</div>
+        <div class="fact-sub">Tre pass i veckan</div>
+      </div>
+      <div class="fact">
+        <div class="fact-label">Spelplats</div>
+        <div class="fact-value">Ladugårdsgärdet</div>
+        <div class="fact-sub">Stockholm, Östermalm</div>
+      </div>
+      <div class="fact">
+        <div class="fact-label">Lagtyp</div>
+        <div class="fact-value">Blandat lag</div>
+        <div class="fact-sub">Damer &amp; herrar</div>
+      </div>
+      <div class="fact">
+        <div class="fact-label">Avgift</div>
+        <div class="fact-value">150 kr</div>
+        <div class="fact-sub">Hela säsongen 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<!-- SPOTIFY -->
+<section class="spotify-bg" id="playlist">
+  <div class="spotify-inner">
+    <div class="reveal">
+      <div class="spotify-eyebrow">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        Beach 2026 · Spellista
+      </div>
+      <h2 class="spotify-h">Vår <em>sommarlåtlista</em> —<br>lyssna &amp; bidra</h2>
+      <p class="spotify-body">Vi håller en gemensam spellista under hela säsongen. Lägg till dina favoritlåtar och lyssna medan du spelar.</p>
+      <a href="https://open.spotify.com/playlist/5OddZKw69YFfVWvcGrSyWR" target="_blank" rel="noopener" class="spotify-open">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        Öppna i Spotify
+      </a>
+    </div>
+    <div class="spotify-player reveal">
+      <iframe src="https://open.spotify.com/embed/playlist/5OddZKw69YFfVWvcGrSyWR?utm_source=generator&theme=0"
+        allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<!-- MEMBERSHIP -->
+<section class="section" id="medlemskap">
+  <div class="section-inner">
+    <span class="eyebrow reveal">Medlemskap</span>
+    <h2 class="reveal">Vad ingår?</h2>
+    <div class="membership-grid">
+      <div class="price-block reveal">
+        <div class="price-num">150</div>
+        <div class="price-unit">kr / säsong</div>
+        <div class="price-desc">Engångsavgift för hela sommaren 2026</div>
+        <ul class="price-list">
+          <li>Alla speltillfällen under säsongen</li>
+          <li>Spelschema via inloggning</li>
+          <li>Blandat, välkomnande lag</li>
+          <li>Spel på Ladugårdsgärdets sandplaner</li>
+          <li>Lagets gemensamma Spotify-spellista</li>
+        </ul>
+        <button class="btn-primary open-popup">Anmäl dig nu</button>
+      </div>
+      <div class="membership-copy reveal">
+        <p>150 kr är en engångskostnad som täcker hela sommarsäsongen 2026 — ett av Stockholms mest prisvärda sätt att röra på sig utomhus med ett socialt och välkomnande lag.</p>
+        <p>Du betalar en gång och får full tillgång till spelschema och bokningssystem. Alla detaljer finns när du loggar in på sidan.</p>
+        <p>Har du frågor om betalning eller vad som ingår? Kontakta lagledare Alexandra direkt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<!-- FAQ -->
+<section class="section faq-bg" id="faq">
+  <div class="section-inner">
+    <span class="eyebrow reveal">Vanliga frågor</span>
+    <h2 class="reveal">Frågor &amp; svar</h2>
+    <div class="faq-grid reveal">
+      <details class="faq">
+        <summary>Var ligger planerna?</summary>
+        <div class="faq-ans">Sandplanerna vid Ladugårdsgärdet, nära Östermalm. Närmaste tunnelbanestation är Karlaplan (röda linjen) — ca 10 minuters promenad.</div>
+      </details>
+      <details class="faq">
+        <summary>Behöver jag ha spelat förut?</summary>
+        <div class="faq-ans">Nej. Vi välkomnar alla nivåer — från nybörjare till vana spelare. Fokus är glädje och gemenskap.</div>
+      </details>
+      <details class="faq">
+        <summary>Vad kostar det och hur betalar jag?</summary>
+        <div class="faq-ans">150 kr för hela säsongen, betalas via Swish. Du får en QR-kod per mejl direkt efter anmälan.</div>
+      </details>
+      <details class="faq">
+        <summary>Hur ofta spelar ni?</summary>
+        <div class="faq-ans">Tre gånger i veckan under säsongen. Exakt schema hittar du när du loggat in.</div>
+      </details>
+      <details class="faq">
+        <summary>Är laget öppet för alla?</summary>
+        <div class="faq-ans">Ja — blandat lag öppet för damer och herrar, alla åldrar och alla nivåer.</div>
+      </details>
+      <details class="faq">
+        <summary>Vad behöver jag ta med?</summary>
+        <div class="faq-ans">Träningskläder och bra humör. Bollar finns. De flesta spelar barfota eller med sandsockor.</div>
+      </details>
+      <details class="faq">
+        <summary>Kan jag prova först?</summary>
+        <div class="faq-ans">Hör av dig till Alexandra — vi hittar ett tillfälle för dig att prova innan du anmäler dig.</div>
+      </details>
+      <details class="faq">
+        <summary>Hur anmäler jag mig?</summary>
+        <div class="faq-ans">Klicka på "Anmäl dig"-knappen, fyll i formuläret och betala 150 kr via Swish. Du får inloggningsuppgifter när betalningen är bekräftad.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<!-- LOCATION -->
+<section class="section" id="hitta-hit">
+  <div class="section-inner">
+    <span class="eyebrow reveal">Hitta hit</span>
+    <h2 class="reveal">Vi spelar på Ladugårdsgärdet</h2>
+    <div class="location-grid">
+      <div class="location-copy reveal">
+        <p>Ladugårdsgärdet är ett av Stockholms mest älskade friluftsstråk — hemvist för stadens populäraste beachvolleybollplaner. Området ligger i östra Stockholm, nära Östermalm och Djurgården.</p>
+        <p>Närmaste tunnelbanestation är Karlaplan på röda linjen, ca 10 minuters promenad. Buss 69 stannar också i närheten. Med cykel från city tar det under 15 minuter.</p>
+        <p>Begränsad gratis parkering längs Lidingövägen — vi rekommenderar kollektivtrafik eller cykel.</p>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4073.5!2d18.112!3d59.349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d3a8f0b3b3b%3A0x0!2sLadug%C3%A5rdsg%C3%A4rdet%2C+Stockholm!5e0!3m2!1ssv!2sse!4v1"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Karta Ladugårdsgärdet"></iframe>
+        <div class="map-addr">📍 Ladugårdsgärdet, Stockholm — sandplanerna</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<!-- SIGNUP CTA -->
+<section class="section cta-bg" id="anmalan">
+  <div class="section-inner">
+    <div class="cta-inner reveal">
+      <span class="eyebrow">Anmälan</span>
+      <h2>Redo för sommaren?</h2>
+      <p class="lead">Anmäl dig — du får ett bekräftelsemejl med Swish QR-kod. 150 kr för hela säsongen. Frågor? Kontakta Alexandra direkt.</p>
+      <button class="btn-primary open-popup">Anmäl dig nu</button>
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<!-- CONTACT -->
+<section class="section" id="kontakt">
+  <div class="section-inner">
+    <span class="eyebrow reveal">Kontakt</span>
+    <h2 class="reveal">Hör av dig</h2>
+    <div class="contact-grid">
+      <div class="contact-card reveal">
+        <div class="contact-name">Alexandra Grisanti</div>
+        <div class="contact-role">Lagledare · Gärdet Beach Volley</div>
+        <div class="contact-row">
+          <div class="c-icon">✉️</div>
+          <a href="mailto:alexandrapgrisanti@gmail.com">alexandrapgrisanti@gmail.com</a>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">📞</div>
+          <a href="tel:+46700254213">+46 70 025 42 13</a>
+        </div>
+        <br/>
+        <a href="https://www.facebook.com/profile.php?id=61572115994924" target="_blank" rel="noopener" class="contact-fb">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          Gärdet Beach Volley på Facebook ↗
+        </a>
+      </div>
+      <div class="info-list reveal">
+        <div class="info-item">
+          <div class="info-label">Säsonsstart</div>
+          <div class="info-val">25 maj 2026</div>
+          <div class="info-sub">Schema via inloggning</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Spelplats</div>
+          <div class="info-val">Ladugårdsgärdet</div>
+          <div class="info-sub">Stockholm · Nära Karlaplan</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Avgift</div>
+          <div class="info-val">150 kr / säsong</div>
+          <div class="info-sub">Hela sommaren 2026</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Spellista</div>
+          <div class="info-val">BEACH 2026</div>
+          <div class="info-sub"><a href="https://open.spotify.com/playlist/5OddZKw69YFfVWvcGrSyWR" target="_blank" rel="noopener">Öppna på Spotify ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <a class="footer-logo" href="/">
+    <img src="beach.png" alt="Gärdet Beach Volley" />
+    <span>Gärdet Beach Volley</span>
+  </a>
+  <div class="footer-links">
+    <a href="https://www.facebook.com/profile.php?id=61572115994924" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/gardet.beachvolley" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://open.spotify.com/playlist/5OddZKw69YFfVWvcGrSyWR" target="_blank" rel="noopener">Spotify</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+  <p class="copy">© 2026 Gärdet Beach Volley · Ladugårdsgärdet, Stockholm · <a href="mailto:alexandrapgrisanti@gmail.com" style="color:inherit">alexandrapgrisanti@gmail.com</a></p>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, { threshold: 0.06 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  const overlay = document.getElementById('popup-overlay');
+  const openPopup = () => { overlay.classList.add('open'); document.body.style.overflow = 'hidden'; };
+  const closePopup = () => { overlay.classList.remove('open'); document.body.style.overflow = ''; };
+  document.querySelectorAll('.open-popup').forEach(el => el.addEventListener('click', openPopup));
+  document.getElementById('popup-close').addEventListener('click', closePopup);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closePopup(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closePopup(); });
+</script>
 
 </body>
 </html>
